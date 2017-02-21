@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane id="pane" fx:id="bdpn" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="587.0" prefWidth="599.0" style="-fx-border-color: black; -fx-background-color: blue; -fx-border-width: 2;" stylesheets="@../../../../Desktop/s.css" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="newpro.mc1">
+   <top>
+      <Label prefHeight="67.0" prefWidth="531.0" text="WELCOME TO THE TEST" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="Arial Narrow" size="53.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+
+   </top>
+   <center>
+      <ImageView accessibleRole="PARENT" fitHeight="319.0" fitWidth="363.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+         <image>
+            <Image url="@Picture1.png" />
+         </image>
+      </ImageView>
+   </center>
+   <bottom>
+      <GridPane prefHeight="143.0" prefWidth="586.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button mnemonicParsing="false" onAction="#start1" prefHeight="66.0" prefWidth="181.0" style="-fx-background-insets: 0,9 9 8 9,9,10,11; -fx-padding: 15 30 15 30; -fx-background-radius: 50;" text="Start Test" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+               <font>
+                  <Font name="Book Antiqua" size="19.0" />
+               </font>
+            </Button>
+            <Button layoutX="366.0" layoutY="49.0" mnemonicParsing="false" onAction="#admin" prefHeight="66.0" prefWidth="175.0" style="-fx-background-insets: 0,9 9 8 9,9,10,11; -fx-padding: 15 30 15 30; -fx-background-radius: 50;" text="Admin Login" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+               <font>
+                  <Font name="Book Antiqua" size="19.0" />
+               </font>
+            </Button>
+         </children>
+      </GridPane>
+   </bottom>
+</BorderPane>

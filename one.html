@@ -1,0 +1,49 @@
+<html>
+<head>
+<script src="http://code.jquery.com/jquery-1.7rc2.js"></script>
+<style type='text/css'>
+.left-text {
+            text-align: left;
+}
+</style>
+<!-- import the Google charts API -->
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script type="text/javascript">
+            // load the Visualization API and the chart package
+            google.load('visualization', '1.0', {'packages':['corechart']});
+            // define call back handler
+            google.setOnLoadCallback(drawChart);
+            // function to draw charts
+            function drawChart() {
+                        // configure Chart Details
+                        var data = new google.visualization.DataTable();
+                        // define columns. It will represent x axis and y axis
+                        data.addColumn('string', 'Year');
+                        data.addColumn('number', 'Sales');
+                        // add data to chart
+                        data.addRows(4);
+                        data.setValue(0, 0, '2004');
+                        data.setValue(0, 1, 1000);
+                        data.setValue(1, 0, '2005');
+                        data.setValue(1, 1, 1170);
+                        data.setValue(2, 0, '2006');
+                        data.setValue(2, 1, 660);
+                        data.setValue(3, 0, '2007');
+                        data.setValue(3, 1, 460);
+                        var chart = new 
+                                   google.visualization.BarChart(document.getElementById('chart_div'));
+                        // set chart options
+                        chart.draw(data, {width: 400, height: 240, title: 'Company Performance',
+                              vAxis: {title: 'Year', titleTextStyle: {color: 'red'}}
+                         });
+            }
+</script>
+</head>
+<body onload="drawChart();">
+            <!--div that will hold the bar chart-->
+            <div style="width: 100%; height: 500; text-align: center"
+                        align="center">
+                        <div id="chart_div" style="width: 500px; height: 500px"></div>
+            </div>
+</body>
+</html>

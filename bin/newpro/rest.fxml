@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="725.0" style="-fx-background-color: #008b8b; -fx-border-color: black; -fx-border-width: 2;" stylesheets="@../../../../Desktop/s.css" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <Label text="RESULT" textFill="#cd9090" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="Baskerville Old Face" size="49.0" />
+         </font>
+      </Label>
+   </top>
+</BorderPane>
